@@ -2,22 +2,48 @@ import React from "react";
 
 const ProductCard = ({ imageUrl, category, title, price }) => {
   return (
-    <div className="productCard mt-4">
-      <a href="#!" className="btn">
-        <div class="card" style={{ border: "none" }}>
-          <img src={imageUrl} class="card-img-top" alt="..." />
-          <div class="card-body">
-            <p class="card-text mb-1">
-              <small class="text-muted">{category}</small>
-            </p>
-            <h6 class="card-title mb-1" style={{ color: "#384355" }}>
-              {title}
-            </h6>
-            <h6 class="card-price mb-1">₹ {price}</h6>
-          </div>
+    <a id="product-card" href="#!" className="btn text-left" style={{}}>
+      <div className="card mt-1" style={{ border: "none" }}>
+        <img src={imageUrl} className="card-img-top" alt="product" />
+        <div className="card-body p-1">
+          <p
+            className="card-text my-1 card-category"
+            style={{
+              color: "#929292 !important",
+              fontSize: "11px",
+              fontFamily: "Poppins !important",
+              letterSpacing: "0.32px",
+              fontWeight: "500",
+            }}
+          >
+            <small className="text-muted">{category.toUpperCase()}</small>
+          </p>
+          <h5
+            className="card-title my-1 card-title"
+            style={{
+              fontWeight: 600,
+              fontFamily: "Poppins !important",
+              fontSize: "13px",
+              letterSpacing: "0.58px",
+              color: "#384355 !important",
+              textTransform: "capitalize",
+            }}
+          >
+            {title}
+          </h5>
+          <p
+            className="card-text my-1 card-price"
+            style={{
+              font: "Medium 16px Poppins !important",
+              letterSpacing: "0.58px",
+              color: "#000000",
+            }}
+          >
+            ₹ {price}
+          </p>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
   );
 };
 export default ProductCard;

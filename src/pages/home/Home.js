@@ -14,8 +14,8 @@ const Home = () => {
     <div className="home">
       <Base>
         <Slider />
-        <div className="container mt-4">
-          <div className="row d-flex justify-content-between">
+        <div className="container my-4">
+          <div className="row d-flex justify-content-between my-2 mx-1 align-items-baseline">
             <div className="col-4">
               <PrettyHeader title="Selected just for you" />
             </div>
@@ -25,8 +25,8 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="row">
-            <div className="col-3">
+          <div className="row my-3">
+            <div className="col-6 col-sm-6 col-md-3 ">
               <ProductCard
                 imageUrl={product}
                 category="loafers"
@@ -34,7 +34,7 @@ const Home = () => {
                 price="2000"
               />
             </div>
-            <div className="col-3">
+            <div className="col-6 col-sm-6 col-md-3 ">
               <ProductCard
                 imageUrl={product1}
                 category="loafers"
@@ -42,7 +42,7 @@ const Home = () => {
                 price="2000"
               />
             </div>
-            <div className="col-3">
+            <div className="col-6 col-sm-6 col-md-3 ">
               <ProductCard
                 imageUrl={product2}
                 category="loafers"
@@ -50,7 +50,7 @@ const Home = () => {
                 price="2000"
               />
             </div>
-            <div className="col-3">
+            <div className="col-6 col-sm-6 col-md-3 ">
               <ProductCard
                 imageUrl={product3}
                 category="loafers"
@@ -60,8 +60,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container my-3">
-          <div className="row d-flex justify-content-center">
+        <div className="container my-4">
+          <div className="row my-3 d-flex justify-content-center">
             <div className="col-5">
               <PrettyHeader
                 title="How are we different"
@@ -70,8 +70,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container mt-4">
-          <div className="row d-flex justify-content-between">
+        <div className="container my-4">
+          <div className="row d-flex justify-content-between my-2 mx-1 align-items-baseline">
             <div className="col-4">
               <PrettyHeader title="Selected just for you" />
             </div>
@@ -81,7 +81,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="row">
+          <div className="row my-3">
             <div className="col-3">
               <ProductCard
                 imageUrl={product}
