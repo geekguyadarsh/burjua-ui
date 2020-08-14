@@ -1,0 +1,24 @@
+#slider .carousel-indicators li {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+}
+
+#slider .carousel-indicators .active {
+  background-color: #ffbc00;
+  width: 15px;
+  height: 5px;
+  border-radius: 55%;
+}
+
+#slider .carousel-item {
+  height: 70%;
+}
+#slider .carousel-item img {
+  height: auto;
+}
+#slider .carousel-caption {
+  position: relative;
+  left: -20%;
+  bottom: 45%;
+}

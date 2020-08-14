@@ -1,11 +1,16 @@
 import React from "react";
 import "./App.css";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import Home from "./pages/home/Home";
+// import "./bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello from Burjua</h1>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Home} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "FortuneCookieNF";
+  src: url(../../assets/FortuneCookieNF.otf);
+}
+
+.navbar {
+  background-color: rgb(44, 43, 88);
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-right: 1.6em;
+}
+
+.navbar ul li .faded-text {
+  opacity: 0.6;
+}
+
+.navbar .searchbar {
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.navbar .searchbar:focus {
+  outline: none;
+}
