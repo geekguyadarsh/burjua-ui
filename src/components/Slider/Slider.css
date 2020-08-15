@@ -5,10 +5,11 @@
 }
 
 #slider .carousel-indicators .active {
-  background-color: #ffbc00;
   width: 15px;
   height: 5px;
-  border-radius: 55%;
+  background: #ffbc00 0% 0% no-repeat padding-box;
+  border-radius: 44%;
+  opacity: 1;
 }
 
 #slider .carousel-item {
@@ -17,8 +18,17 @@
 #slider .carousel-item img {
   height: auto;
 }
-#slider .carousel-caption {
+/* #slider .carousel-caption {
   position: relative;
   left: -20%;
   bottom: 45%;
-}
+} */
+
+/* .carousel-caption {
+  width: 550px;
+  left: 15%;
+  top: 50% !important;
+  transform: translateY(-50%);
+  text-align: left;
+  bottom: initial;
+} */

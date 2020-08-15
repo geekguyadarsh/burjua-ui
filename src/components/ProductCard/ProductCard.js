@@ -1,10 +1,30 @@
 import React from "react";
 
-const ProductCard = ({ imageUrl, category, title, price }) => {
+const ProductCard = ({ imageUrl, category, title, price, discount }) => {
   return (
     <a id="product-card" href="#!" className="btn text-left" style={{}}>
       <div className="card mt-1" style={{ border: "none" }}>
         <img src={imageUrl} className="card-img-top" alt="product" />
+        {discount ? (
+          <div
+            className="discount"
+            style={{
+              position: "absolute",
+              background: "#FF0080",
+              borderRadius: "5px",
+              top: "10px",
+              left: "10px",
+              fontSize: "12px",
+              color: "white",
+              padding: "1px 6px",
+            }}
+          >
+            {discount}
+          </div>
+        ) : (
+          ""
+        )}
+
         <div className="card-body p-1">
           <p
             className="card-text my-1 card-category"

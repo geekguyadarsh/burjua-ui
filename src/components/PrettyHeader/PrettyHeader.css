@@ -10,3 +10,10 @@
   color: #384355;
   opacity: 1;
 }
+
+@media (min-width: 768px) {
+  .pretty-text-left .pretty-text {
+    position: absolute;
+    left: 13px;
+  }
+}

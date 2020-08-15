@@ -114,7 +114,7 @@ const Footer = () => {
                       <a href="#!">store@burjua.in</a>
                     </li>
                     <li>
-                      <a href="#!">Ph no. +91 95235 32523</a>
+                      <a href="#!">Ph no. +91 9523532523</a>
                     </li>
                   </ul>
                 </div>
