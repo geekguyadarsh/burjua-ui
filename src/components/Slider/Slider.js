@@ -35,7 +35,11 @@ const Slider = () => {
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img className="d-block w-100" src={sliderImg} alt="First slide" />
+          <img
+            className="d-block w-100 carousel-bg"
+            src={sliderImg}
+            alt="First slide"
+          />
           <div
             class="carousel-caption d-flex flex-column align-items-baseline"
             style={{
@@ -100,7 +104,11 @@ const Slider = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImg} alt="First slide" />
+          <img
+            className="d-block w-100 carousel-bg"
+            src={sliderImg}
+            alt="First slide"
+          />
           <div
             class="carousel-caption d-flex flex-column align-items-baseline"
             style={{
@@ -165,7 +173,80 @@ const Slider = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImg} alt="First slide" />
+          <img
+            className="d-block w-100 carousel-bg"
+            src={sliderImg}
+            alt="First slide"
+          />
+          <div
+            class="carousel-caption d-flex flex-column align-items-baseline"
+            style={{
+              position: "absolute",
+              right: "15%",
+              bottom: "20px",
+              left: "5%",
+              zIndex: "10",
+              paddingTop: "20px",
+              paddingBottom: "20px",
+              color: "#fff",
+            }}
+          >
+            <h5
+              style={{
+                fontFamily: "PlayfairDisplay",
+                letterSpacing: "1.3px",
+                textAlign: "initial",
+                textTransform: "capitalize",
+                fontSize: "23px",
+              }}
+            >
+              Hand Crafted Shoes <br />
+              <span style={{ fontSize: "1.3em" }}>
+                that suit your personality
+              </span>
+            </h5>
+            <Link href="#!" style={{ textDecoration: "none", color: "white" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  fontFamily: "Poppins",
+                  fontWeight: "600",
+                  fontSize: "13px",
+                }}
+              >
+                SHOP NOW{" "}
+                <span
+                  style={{
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    paddingLeft: "8px",
+                  }}
+                >
+                  <img
+                    src={btnArrow}
+                    alt="btn"
+                    style={{
+                      padding: "10px",
+                      background: "#FFBC00",
+                      borderRadius: "50%",
+                    }}
+                  />
+                </span>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <img
+            className="d-block w-100 carousel-bg"
+            src={sliderImg}
+            alt="First slide"
+          />
           <div
             class="carousel-caption d-flex flex-column align-items-baseline"
             style={{
@@ -230,72 +311,11 @@ const Slider = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImg} alt="First slide" />
-          <div
-            class="carousel-caption d-flex flex-column align-items-baseline"
-            style={{
-              position: "absolute",
-              right: "15%",
-              bottom: "20px",
-              left: "5%",
-              zIndex: "10",
-              paddingTop: "20px",
-              paddingBottom: "20px",
-              color: "#fff",
-            }}
-          >
-            <h5
-              style={{
-                fontFamily: "PlayfairDisplay",
-                letterSpacing: "1.3px",
-                textAlign: "initial",
-                textTransform: "capitalize",
-                fontSize: "23px",
-              }}
-            >
-              Hand Crafted Shoes <br />
-              <span style={{ fontSize: "1.2em" }}>
-                that suit your personality
-              </span>
-            </h5>
-            <Link href="#!" style={{ textDecoration: "none", color: "white" }}>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  fontFamily: "Poppins",
-                  fontWeight: "600",
-                  fontSize: "13px",
-                }}
-              >
-                SHOP NOW{" "}
-                <span
-                  style={{
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexDirection: "column",
-                    paddingLeft: "8px",
-                  }}
-                >
-                  <img
-                    src={btnArrow}
-                    alt="btn"
-                    style={{
-                      padding: "10px",
-                      background: "#FFBC00",
-                      borderRadius: "50%",
-                    }}
-                  />
-                </span>
-              </div>
-            </Link>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImg} alt="First slide" />
+          <img
+            className="d-block w-100 carousel-bg"
+            src={sliderImg}
+            alt="First slide"
+          />
           <div
             class="carousel-caption d-flex flex-column align-items-baseline"
             style={{

@@ -54,9 +54,10 @@ const ProductCard = ({ imageUrl, category, title, price, discount }) => {
           <p
             className="card-text my-1 card-price"
             style={{
-              font: "Medium 16px Poppins !important",
               letterSpacing: "0.58px",
               color: "#000000",
+              fontFamily: "Poppins",
+              fontWeight: "500",
             }}
           >
             ₹ {price}

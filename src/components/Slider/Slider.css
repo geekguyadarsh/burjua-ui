@@ -14,7 +14,16 @@
 
 #slider .carousel-item {
   height: 70%;
+  min-height: 350px;
 }
+
+#slider .carousel-item .carousel-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 350px;
+}
+
 #slider .carousel-item img {
   height: auto;
 }
