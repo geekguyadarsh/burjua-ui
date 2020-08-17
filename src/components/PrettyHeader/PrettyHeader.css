@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "PlayfairDisplay";
-  src: url("../../assets/PlayfairDisplay.ttf");
-}
-
 .pretty-header .pretty-text {
   text-align: left;
   font-family: PlayfairDisplay !important;

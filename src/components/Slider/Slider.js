@@ -5,25 +5,6 @@ import btnArrow from "../../assets/btnArrow.svg";
 import { Link } from "react-router-dom";
 
 const Slider = () => {
-  const capsion = () => {
-    return (
-      <div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImg} alt="Second slide" />
-        </div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImg} alt="Third slide" />
-        </div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImg} alt="Third slide" />
-        </div>
-        <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImg} alt="Third slide" />
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div id="slider" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
@@ -41,7 +22,7 @@ const Slider = () => {
             alt="First slide"
           />
           <div
-            class="carousel-caption d-flex flex-column align-items-baseline"
+            className="carousel-caption d-flex flex-column align-items-baseline"
             style={{
               position: "absolute",
               right: "15%",
@@ -110,7 +91,7 @@ const Slider = () => {
             alt="First slide"
           />
           <div
-            class="carousel-caption d-flex flex-column align-items-baseline"
+            className="carousel-caption d-flex flex-column align-items-baseline"
             style={{
               position: "absolute",
               right: "15%",
@@ -179,7 +160,7 @@ const Slider = () => {
             alt="First slide"
           />
           <div
-            class="carousel-caption d-flex flex-column align-items-baseline"
+            className="carousel-caption d-flex flex-column align-items-baseline"
             style={{
               position: "absolute",
               right: "15%",
@@ -248,7 +229,7 @@ const Slider = () => {
             alt="First slide"
           />
           <div
-            class="carousel-caption d-flex flex-column align-items-baseline"
+            className="carousel-caption d-flex flex-column align-items-baseline"
             style={{
               position: "absolute",
               right: "15%",
@@ -317,7 +298,7 @@ const Slider = () => {
             alt="First slide"
           />
           <div
-            class="carousel-caption d-flex flex-column align-items-baseline"
+            className="carousel-caption d-flex flex-column align-items-baseline"
             style={{
               position: "absolute",
               right: "15%",

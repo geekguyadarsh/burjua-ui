@@ -13,19 +13,21 @@
 }
 
 #slider .carousel-item {
-  height: 70%;
-  min-height: 350px;
-}
-
-#slider .carousel-item .carousel-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 350px;
+  /* height: 70%; */
+  min-height: 400px;
 }
 
 #slider .carousel-item img {
   height: auto;
+}
+
+@media only screen and (max-device-width: 768px) {
+  #slider .carousel-item .carousel-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+  }
 }
 /* #slider .carousel-caption {
   position: relative;

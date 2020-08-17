@@ -8,12 +8,11 @@ import product from "../../assets/Product.png";
 import product1 from "../../assets/Product1.png";
 import product2 from "../../assets/Product2.png";
 import product3 from "../../assets/Product3.png";
-import "./Home.scss";
 
 const Home = () => {
   return (
     <div className="home">
-      <Base>
+      <Base homepage="true">
         <Slider />
         <div className="container my-4">
           <OfferCard />
@@ -26,7 +25,7 @@ const Home = () => {
             <div className="col-md-4 d-flex justify-content-end">
               <button
                 type="button"
-                class="btn btn-sm btn-outline-secondary d-md-block d-none"
+                className="btn btn-sm btn-outline-secondary d-md-block d-none"
               >
                 SHOW MORE
               </button>
@@ -87,7 +86,7 @@ const Home = () => {
             <div className="col-4 d-flex justify-content-end">
               <button
                 type="button"
-                class="btn btn-sm btn-outline-secondary d-md-block d-none"
+                className="btn btn-sm btn-outline-secondary d-md-block d-none"
               >
                 SHOW MORE
               </button>
