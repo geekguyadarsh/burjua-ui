@@ -32,7 +32,7 @@ const FilterCollection = ({ filterType, filters }) => {
       </div>
       {filters.map((filter, i) => {
         return (
-          <div key={i} id={`filter${filterType}`} className="collapse mx-2">
+          <div key={i} id={`filter${filterType}`} className="expand mx-2">
             <div className="form-check">
               <input
                 className="form-check-input"

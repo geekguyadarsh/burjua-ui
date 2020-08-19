@@ -52,9 +52,13 @@ const NavBar = ({ homepage = false }) => {
         />
         <input
           type="text"
-          className="searchbar text-white .d-none .d-md-block .d-lg-block"
+          className={
+            homepage
+              ? "searchbar text-white .d-none .d-md-block .d-lg-block"
+              : "searchbar text-dark .d-none .d-md-block .d-lg-block"
+          }
           placeholder="Search products"
-          style={{ caretColor: "white" }}
+          style={{ caretColor: homepage ? "white" : "black" }}
         />
       </form>
       <button
@@ -120,7 +124,7 @@ const NavBar = ({ homepage = false }) => {
                   ? "nav-link text-white faded-text"
                   : "nav-link text-black faded-text"
               }
-              to="#!"
+              to="/categories"
             >
               Categories
             </Link>

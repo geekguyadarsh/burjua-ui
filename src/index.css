@@ -63,3 +63,11 @@ code {
 .text-black {
   color: black;
 }
+
+.MuiSlider-root {
+  color: #000000 !important;
+}
+
+button:hover {
+  cursor: pointer !important;
+}

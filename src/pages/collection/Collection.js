@@ -6,6 +6,9 @@ import product1 from "../../assets/Product1.png";
 import product2 from "../../assets/Product2.png";
 import product3 from "../../assets/Product3.png";
 import FilterCollection from "../../components/FilterCollection/FilterCollection";
+import PriceSlider from "../../components/PriceSlider/PriceSlider";
+import ButtonFilter from "../../components/ButtonFilter/ButtonFilter";
+import ColorFilter from "../../components/ColorFilter/ColorFilter";
 
 const Collection = () => {
   const [filterData, setFilterData] = useState({
@@ -46,7 +49,7 @@ const Collection = () => {
           </div>
         </div>
         <div className="row my-3">
-          <div className="col-3">
+          <div className="col-12 col-md-3">
             <FilterCollection
               filterType={filter.type}
               filters={filter.filters}
@@ -59,11 +62,16 @@ const Collection = () => {
               filterType={filter.type}
               filters={filter.filters}
             />
+            <ButtonFilter filterType="Discount" />
+            <PriceSlider />
+            <ButtonFilter filterType="Sizes" />
+            <ColorFilter filterType="Colors" />
           </div>
-          <div className="col-9">
+          <div className="col-12 col-md-9">
             <div className="row">
               <div className="col-6 col-sm-6 col-md-4">
                 <ProductCard
+                  discount="60%"
                   imageUrl={product1}
                   category="loafers"
                   title="Bally black lione lantel"
@@ -72,7 +80,6 @@ const Collection = () => {
               </div>
               <div className="col-6 col-sm-6 col-md-4">
                 <ProductCard
-                  discount="60%"
                   imageUrl={product2}
                   category="loafers"
                   title="Bally black lione lantel"
@@ -122,7 +129,6 @@ const Collection = () => {
               </div>
               <div className="col-6 col-sm-6 col-md-4">
                 <ProductCard
-                  discount="60%"
                   imageUrl={product2}
                   category="loafers"
                   title="Bally black lione lantel"
@@ -131,6 +137,32 @@ const Collection = () => {
               </div>
               <div className="col-6 col-sm-6 col-md-4">
                 <ProductCard
+                  discount="40%"
+                  imageUrl={product3}
+                  category="loafers"
+                  title="Bally black lione lantel"
+                  price="2000"
+                />
+              </div>
+              <div className="col-6 col-sm-6 col-md-4">
+                <ProductCard
+                  imageUrl={product1}
+                  category="loafers"
+                  title="Bally black lione lantel"
+                  price="2000"
+                />
+              </div>
+              <div className="col-6 col-sm-6 col-md-4">
+                <ProductCard
+                  imageUrl={product2}
+                  category="loafers"
+                  title="Bally black lione lantel"
+                  price="2000"
+                />
+              </div>
+              <div className="col-6 col-sm-6 col-md-4">
+                <ProductCard
+                  discount="40%"
                   imageUrl={product3}
                   category="loafers"
                   title="Bally black lione lantel"
