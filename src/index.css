@@ -20,17 +20,15 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Poppins;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 #product-card:hover {
   box-shadow: 0px 5px 10px #b8b8b829;
@@ -70,4 +68,17 @@ code {
 
 button:hover {
   cursor: pointer !important;
+}
+
+.show-btn {
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px 14px;
+}
+
+.page-title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
 }

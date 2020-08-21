@@ -25,7 +25,7 @@ const Home = () => {
             <div className="col-md-4 d-flex justify-content-end">
               <button
                 type="button"
-                className="btn btn-sm btn-outline-secondary d-md-block d-none"
+                className="btn btn-sm btn-outline-secondary d-md-block d-none show-btn"
               >
                 SHOW MORE
               </button>
@@ -86,7 +86,7 @@ const Home = () => {
             <div className="col-4 d-flex justify-content-end">
               <button
                 type="button"
-                className="btn btn-sm btn-outline-secondary d-md-block d-none"
+                className="btn btn-sm btn-outline-secondary d-md-block d-none show-btn"
               >
                 SHOW MORE
               </button>

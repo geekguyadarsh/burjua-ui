@@ -17,6 +17,7 @@ const ProductCard = ({ imageUrl, category, title, price, discount }) => {
               fontSize: "12px",
               color: "white",
               padding: "1px 6px",
+              fontWeight: "600",
             }}
           >
             {discount}

@@ -112,7 +112,7 @@ const NavBar = ({ homepage = false }) => {
               className={
                 homepage ? "nav-link text-white" : "nav-link text-black"
               }
-              to="#!"
+              to="/"
             >
               Home
             </Link>
@@ -154,7 +154,7 @@ const NavBar = ({ homepage = false }) => {
             </Link>
           </li>
           <li className="nav-item d-md-block d-none">
-            <Link className="nav-link text-white faded-text" to="#!">
+            <Link className="nav-link text-white faded-text" to="/cart">
               <img src={homepage ? CartIcon : CartIconGrey} alt="cart" />
             </Link>
           </li>
