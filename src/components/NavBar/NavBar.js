@@ -5,13 +5,25 @@ import CartIcon from "../../assets/Cart.svg";
 import CartIconBlack from "../../assets/Cart-black.svg";
 import CartIconGrey from "../../assets/Cart-grey.svg";
 import CartIconWhite from "../../assets/cart-white.svg";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import "./NavBar.css";
 import searchIcon from "../../assets/Search.svg";
 import searchIconGrey from "../../assets/Search-grey.svg";
 import searchIconBlack from "../../assets/Search-black.svg";
 
-const NavBar = ({ homepage = false }) => {
+const currentTab = (history, path) => {
+  if (history.location.pathname === path) {
+    return {
+      opacity: 1,
+    };
+  } else {
+    return {
+      opacity: 0.6,
+    };
+  }
+};
+
+const NavBar = ({ homepage = false, history }) => {
   return (
     <nav
       className="navbar navbar-expand-md px-0"
@@ -39,11 +51,14 @@ const NavBar = ({ homepage = false }) => {
         alt="search"
         className="d-block d-md-none ml-auto mr-3"
       />
-      <img
-        src={homepage ? CartIconWhite : CartIconBlack}
-        alt="cart"
-        className="d-block d-md-none mr-2"
-      />
+      <Link className="" to="/cart">
+        <img
+          src={homepage ? CartIconWhite : CartIconBlack}
+          alt="cart"
+          className="d-block d-md-none mr-2"
+          href="/cart"
+        />
+      </Link>
       <form action="search" className="d-md-block d-none">
         <img
           src={homepage ? searchIcon : searchIconGrey}
@@ -109,6 +124,7 @@ const NavBar = ({ homepage = false }) => {
         <ul className="navbar-nav nav-right ml-auto mr-2">
           <li className="nav-item active">
             <Link
+              style={currentTab(history, "/")}
               className={
                 homepage ? "nav-link text-white" : "nav-link text-black"
               }
@@ -119,10 +135,9 @@ const NavBar = ({ homepage = false }) => {
           </li>
           <li className="nav-item">
             <Link
+              style={currentTab(history, "/categories")}
               className={
-                homepage
-                  ? "nav-link text-white faded-text"
-                  : "nav-link text-black faded-text"
+                homepage ? "nav-link text-white" : "nav-link text-black"
               }
               to="/categories"
             >
@@ -131,30 +146,29 @@ const NavBar = ({ homepage = false }) => {
           </li>
           <li className="nav-item">
             <Link
+              style={currentTab(history, "/about")}
               className={
-                homepage
-                  ? "nav-link text-white faded-text"
-                  : "nav-link text-black faded-text"
+                homepage ? "nav-link text-white" : "nav-link text-black"
               }
-              to="#!"
+              to="/about"
             >
               Who we are?
             </Link>
           </li>
           <li className="nav-item">
             <Link
+              style={currentTab(history, "/about")}
               className={
-                homepage
-                  ? "nav-link text-white faded-text"
-                  : "nav-link text-black faded-text"
+                homepage ? "nav-link text-white" : "nav-link text-black"
               }
-              to="#!"
+              data-toggle="modal"
+              data-target="#signinModal"
             >
-              Login
+              Signin
             </Link>
           </li>
           <li className="nav-item d-md-block d-none">
-            <Link className="nav-link text-white faded-text" to="/cart">
+            <Link className="nav-link text-white" to="/cart">
               <img src={homepage ? CartIcon : CartIconGrey} alt="cart" />
             </Link>
           </li>
@@ -164,4 +178,4 @@ const NavBar = ({ homepage = false }) => {
   );
 };
 
-export default NavBar;
+export default withRouter(NavBar);

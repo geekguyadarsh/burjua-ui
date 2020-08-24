@@ -1,6 +1,12 @@
 import React from "react";
 
-const ProductCard = ({ imageUrl, category, title, price, discount }) => {
+const ProductCard = ({
+  imageUrl,
+  category = "NA",
+  title = "NA",
+  price = "NA",
+  discount,
+}) => {
   return (
     <a id="product-card" href="#!" className="btn text-left" style={{}}>
       <div className="card mt-1" style={{ border: "none" }}>

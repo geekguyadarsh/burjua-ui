@@ -45,7 +45,7 @@
 }
 #Cart .input-box {
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #d8d8d8;
+  border: none;
   border-radius: 5px;
   text-align: left;
   font-size: 12px;
@@ -54,12 +54,13 @@
 
 #Cart .input-box:focus {
   outline: none !important;
+  box-shadow: none !important;
 }
 
 #Cart .input-box::placeholder {
   outline: none !important;
-  margin-left: 1px;
   color: #929292;
+  padding: 8px;
 }
 
 #Cart .apply-btn {

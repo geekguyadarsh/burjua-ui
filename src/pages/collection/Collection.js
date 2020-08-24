@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Base from "../../components/Base/Base";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import PrettyHeader from "../../components/PrettyHeader/PrettyHeader";
@@ -9,12 +9,42 @@ import FilterCollection from "../../components/FilterCollection/FilterCollection
 import PriceSlider from "../../components/PriceSlider/PriceSlider";
 import ButtonFilter from "../../components/ButtonFilter/ButtonFilter";
 import ColorFilter from "../../components/ColorFilter/ColorFilter";
-
+import { getAllProducts, getProductFilters } from "../helper/coreApiCalls";
 const Collection = () => {
+  //States
+  const [products, setProducts] = useState([]);
   const [filterData, setFilterData] = useState({
     filter: { type: "Material", filters: ["Fabric", "Leather", "Others"] },
   });
+  const [error, setError] = useState(false);
+
   const { filter } = filterData;
+
+  const loadAllProducts = () => {
+    getAllProducts().then((data) => {
+      if (data.error) {
+        return setError(data.error);
+      } else {
+        console.log(data);
+        return setProducts(data);
+      }
+    });
+  };
+  const loadAllFilters = () => {
+    getProductFilters().then((data) => {
+      if (data.error) {
+        return setError(data.error);
+      } else {
+        console.log(data);
+        // return setFilterData(data);
+      }
+    });
+  };
+
+  useEffect(() => {
+    loadAllFilters();
+    loadAllProducts();
+  }, []);
 
   return (
     <Base>
@@ -69,6 +99,19 @@ const Collection = () => {
           </div>
           <div className="col-12 col-md-9">
             <div className="row">
+              {products.map((product, i) => {
+                return (
+                  <div key={i} className="col-6 col-sm-6 col-md-4">
+                    <ProductCard
+                      discount={product.discount}
+                      imageUrl={product.imageURL}
+                      category={product.category}
+                      title={product.name}
+                      price={product.price}
+                    />
+                  </div>
+                );
+              })}
               <div className="col-6 col-sm-6 col-md-4">
                 <ProductCard
                   discount="60%"

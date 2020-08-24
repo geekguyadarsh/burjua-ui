@@ -11,7 +11,7 @@ const Cart = () => {
         <div className="container mt-5">
           <div className="page-title">Shopping Cart</div>
           <div className="container-fluid p-0 mt-2">
-            <div className="row d-flex mt-4 cart-headers">
+            <div className="row d-none d-md-flex mt-4 cart-headers">
               <div className="col-1">Product</div>
               <div className="col-3">Product Name and Category</div>
               <div className="col-2">Color</div>
@@ -25,9 +25,9 @@ const Cart = () => {
             <CartProduct />
 
             <div className="cart-actions mt-5">
-              <div className="row d-flex align-items-center justify-content-between">
-                <div className="col-6 d-flex justify-content-between align-items-center">
-                  <div className="go-back">
+              <div className="row d-flex align-items-center justify-content-between m-1">
+                <div className="col-12 col-md-6 d-flex justify-content-between align-items-center">
+                  <div className="go-back d-none d-md-block">
                     <div
                       type="button"
                       className="d-flex"
@@ -41,32 +41,37 @@ const Cart = () => {
                       <div className="ml-3">Continue shopping</div>
                     </div>
                   </div>
-                  <div className="promo d-flex align-items-center">
-                    <input
-                      className="input-box"
-                      type="text"
-                      placeholder="Promo Code"
-                    />
+                  <form>
                     <div
-                      className="apply-btn"
-                      type="button"
+                      className="promo d-flex align-items-center px-2"
                       style={{
-                        color: "#384355",
-                        fontWeight: "500",
-                        fontSize: "12px",
-                        float: "right",
-                        marginRight: "9px",
-                        position: "absolute",
-                        right: "15px",
+                        border: "1px solid #d8d8d8",
+                        borderRadius: "5px",
                       }}
                     >
-                      Apply
+                      <input
+                        className="input-box form-control p-0"
+                        type="text"
+                        placeholder="Promo Code"
+                        size="15"
+                      />
+                      <div class="input-group-append">
+                        <div
+                          className="apply-btn"
+                          type="button"
+                          style={{
+                            color: "#384355",
+                            fontWeight: "500",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Apply
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="col-6 d-flex justify-content-between align-items-center">
+                  </form>
                   <div
-                    className="cart-total"
+                    className="cart-total d-block d-md-none"
                     style={{
                       fontWeight: "300",
                       fontSize: "16px",
@@ -85,18 +90,58 @@ const Cart = () => {
                       ₹ 4600
                     </span>
                   </div>
-                  <div>
+                </div>
+                <div className="col-12 col-md-6 d-none d-md-flex justify-content-around align-items-center">
+                  <div
+                    className="cart-total d-md-block d-none"
+                    style={{
+                      fontWeight: "300",
+                      fontSize: "16px",
+                      color: "#000000",
+                    }}
+                  >
+                    Total cost
+                    <span
+                      className="ml-2"
+                      style={{
+                        fontWeight: "600",
+                        fontSize: "16px",
+                        color: "#000000",
+                      }}
+                    >
+                      ₹ 4600
+                    </span>
+                  </div>
+                  <div className="">
                     <div className="ask-email">
                       <input
                         className="input-box"
+                        style={{ border: "1px solid #d8d8d8" }}
                         type="email"
                         size="30"
                         placeholder="Enter your email to checkout"
                       />
                     </div>
                   </div>
-                  <div className="checkout-btn">
+                  <div className="checkout-btn ml-1">
                     <button className="btn btn-checkout p-2 px-3">
+                      CHECKOUT
+                    </button>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6 d-block d-md-none justify-content-around align-items-center mt-2">
+                  <div className="">
+                    <div className="ask-email d-flex flex-grow">
+                      <input
+                        className="input-box"
+                        style={{ border: "1px solid #d8d8d8", width: "100%" }}
+                        type="email"
+                        placeholder="Enter your email to checkout"
+                      />
+                    </div>
+                  </div>
+                  <div className="checkout-btn mt-2">
+                    <button className="btn btn-checkout btn-block p-2 px-3 rounded">
                       CHECKOUT
                     </button>
                   </div>

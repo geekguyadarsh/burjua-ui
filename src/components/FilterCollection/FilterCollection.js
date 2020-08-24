@@ -42,7 +42,7 @@ const FilterCollection = ({ filterType, filters }) => {
               />
               <label
                 className="form-check-label"
-                for={`${filter}`}
+                htmlFor={`${filter}`}
                 style={{ fontFamily: "Poppins", fontWeight: "400px" }}
               >
                 {filter}
