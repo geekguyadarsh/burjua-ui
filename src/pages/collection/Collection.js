@@ -5,6 +5,7 @@ import PrettyHeader from "../../components/PrettyHeader/PrettyHeader";
 import product1 from "../../assets/Product1.png";
 import product2 from "../../assets/Product2.png";
 import product3 from "../../assets/Product3.png";
+import filterIcon from "../../assets/filterSortIcon.svg";
 import FilterCollection from "../../components/FilterCollection/FilterCollection";
 import PriceSlider from "../../components/PriceSlider/PriceSlider";
 import ButtonFilter from "../../components/ButtonFilter/ButtonFilter";
@@ -46,6 +47,35 @@ const Collection = () => {
     loadAllProducts();
   }, []);
 
+  const FilterSortCollapsed = () => {
+    return (
+      <div>
+        <div
+          className="d-md-none d-flex col-md-3 justify-content-end align-items-center"
+          style={{}}
+        >
+          <button
+            className="btn d-flex align-items-center"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsedFilters"
+            aria-expanded="false"
+            aria-controls="collapsedFilters"
+            style={{
+              color: "#384355",
+              fontFamily: "Poppins",
+              fontSize: "15px",
+              fontWeight: "600",
+            }}
+          >
+            <img src={filterIcon} alt={filter} className="mr-2" />
+            FILTER | SORT
+          </button>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <Base>
       <div className="container my-4">
@@ -55,7 +85,7 @@ const Collection = () => {
             <PrettyHeader title="Loafers" />
           </div>
           <div className="col-12 col-md-3 pretty-text-left"></div>
-          <div className="col-md-3 d-flex justify-content-end align-items-center">
+          <div className="d-none d-md-flex col-md-3 justify-content-end align-items-center">
             <div
               className="mr-2"
               style={{
@@ -77,9 +107,47 @@ const Collection = () => {
               </div>
             </form>
           </div>
+          <FilterSortCollapsed />
+        </div>
+        <div
+          className="col-12 col-md-3 collapse"
+          id="collapsedFilters"
+          style={{
+            position: "absolute",
+            zIndex: "1",
+            background: "white",
+          }}
+        >
+          <div
+            className="mr-2"
+            style={{
+              color: "#384355",
+              fontFamily: "Poppins",
+              fontSize: "13px",
+              fontWeight: "600",
+            }}
+          >
+            SORT
+          </div>
+          <form>
+            <div className="form-group mb-0">
+              <select className="form-control rounded" id="sortby">
+                <option>Popular</option>
+                <option>Price high - low</option>
+                <option>Price low - high</option>
+              </select>
+            </div>
+          </form>
+          <FilterCollection filterType={filter.type} filters={filter.filters} />
+          <FilterCollection filterType={filter.type} filters={filter.filters} />
+          <FilterCollection filterType={filter.type} filters={filter.filters} />
+          <ButtonFilter filterType="Discount" />
+          <PriceSlider />
+          <ButtonFilter filterType="Sizes" />
+          <ColorFilter filterType="Colors" />
         </div>
         <div className="row my-3">
-          <div className="col-12 col-md-3">
+          <div className="d-none d-md-block col-12 col-md-3">
             <FilterCollection
               filterType={filter.type}
               filters={filter.filters}
