@@ -1,31 +1,6 @@
 import React from "react";
 import product from "../../assets/Product.png";
 const CartProduct = ({ imgUrl, name, color, size, price }) => {
-  const temp = () => {
-    return (
-      <div>
-        <div className="row d-flex mt-4 cart-item align-items-center">
-          <div className="col-4 col-md-1 rounded">
-            <img src={product} alt="product" height="72px" width="72px" />
-          </div>
-          <div className="col-5 col-md-3">
-            <div className="cart-item-name">Bally Black Lione Lantel</div>
-            <div className="cart-item-category">LOAFERS</div>
-          </div>
-          <div className="col-3 d-md-none d-block cart-item-btn">
-            <button className="btn delete-btn">DELETE</button>
-          </div>
-          <div className="col-5 col-md-2 cart-item-color">White</div>
-          <div className="col-5 col-md-1 cart-item-size">XL</div>
-          <div className="col-5 col-md-2 cart-item-price">1</div>
-          <div className="col-5 col-md-2 cart-item-price">₹ 2000</div>
-          <div className="col- cart-item-btn d-none d-md-block">
-            <button className="btn delete-btn">DELETE</button>
-          </div>
-        </div>
-      </div>
-    );
-  };
   return (
     <div>
       <div className="d-none row d-md-flex mt-4 cart-item align-items-center">

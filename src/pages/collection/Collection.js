@@ -11,6 +11,7 @@ import PriceSlider from "../../components/PriceSlider/PriceSlider";
 import ButtonFilter from "../../components/ButtonFilter/ButtonFilter";
 import ColorFilter from "../../components/ColorFilter/ColorFilter";
 import { getAllProducts, getProductFilters } from "../helper/coreApiCalls";
+
 const Collection = () => {
   //States
   const [products, setProducts] = useState([]);

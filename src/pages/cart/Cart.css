@@ -66,10 +66,12 @@
 #Cart .apply-btn {
   background-color: #ffffff;
 }
+
 #Cart .btn-checkout {
   background-color: #ffbc00;
   border-radius: 8px;
   font-size: 12px;
   font-weight: 600;
   color: #ffffff;
+  padding: 7px;
 }
