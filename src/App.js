@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Collection from "./pages/collection/Collection";
 import Cart from "./pages/cart/Cart";
 import Checkout from "./pages/checkout/Checkout";
+import Orders from "./pages/orders/Orders";
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ function App() {
         <Route path="/categories" exact component={Collection} />
         <Route path="/cart" exact component={Cart} />
         <Route path="/checkout" exact component={Checkout} />
+        <Route path="/orders" exact component={Orders} />
       </Switch>
     </BrowserRouter>
   );

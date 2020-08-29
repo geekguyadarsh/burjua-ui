@@ -71,9 +71,8 @@ const Cart = () => {
                     </div>
                   </form>
                   <div
-                    className="cart-total d-block d-md-none"
+                    className="cart-total d-block d-md-none font-weight-light"
                     style={{
-                      fontWeight: "300",
                       fontSize: "16px",
                       color: "#000000",
                     }}
@@ -93,9 +92,8 @@ const Cart = () => {
                 </div>
                 <div className="col-12 col-md-6 d-none d-md-flex justify-content-around align-items-center">
                   <div
-                    className="cart-total d-md-block d-none"
+                    className="cart-total d-md-block d-none font-weight-light"
                     style={{
-                      fontWeight: "300",
                       fontSize: "16px",
                       color: "#000000",
                     }}

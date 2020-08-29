@@ -7,7 +7,13 @@ const ProductInCheckout = () => {
     <div className="my-2">
       <div className="row m-1 p-1">
         <div className="col-3 d-flex justify-content-center align-items-center">
-          <img src={product} alt="product" height="75px" width="75px" />
+          <img
+            src={product}
+            alt="product"
+            height="75px"
+            width="75px"
+            className="rounded"
+          />
         </div>
         <div className="col-8">
           <div className="checkout-item-name">Bally Black Lione Lantel</div>

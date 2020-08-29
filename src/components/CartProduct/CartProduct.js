@@ -1,5 +1,6 @@
 import React from "react";
 import product from "../../assets/Product.png";
+
 const CartProduct = ({ imgUrl, name, color, size, price }) => {
   return (
     <div>

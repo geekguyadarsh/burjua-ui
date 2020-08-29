@@ -69,7 +69,7 @@ const Checkout = () => {
                   </div>
                   <div className="form-group col-6">
                     <input
-                      type="number"
+                      type="tel"
                       className="form-control"
                       id="inputNumber"
                       placeholder="Phone number"
@@ -80,7 +80,7 @@ const Checkout = () => {
               <div className="go-back d-md-none d-block my-3 ml-1">
                 <div
                   type="button"
-                  className="d-flex"
+                  className="d-flex btn"
                   style={{
                     fontWeight: "600",
                     fontSize: "12px",
@@ -106,12 +106,21 @@ const Checkout = () => {
               <ProductInCheckout />
               <ProductInCheckout />
               <ProductInCheckout />
+              <div className="total-cost mt-3 ml-2 mb-1 font-weight-light d-flex px-2 mx-2 justify-content-between justify-content-md-start">
+                Total cost{" "}
+                <span
+                  className="cost ml-3"
+                  style={{ fontWeight: "600", fontSize: "16px" }}
+                >
+                  ₹ 4600
+                </span>
+              </div>
             </div>
           </div>
 
           {/* Action Buttons */}
 
-          <div className="actions d-flex align-items-center justify-content-between mt-3">
+          <div className="actions d-none d-md-flex align-items-center justify-content-between mt-3">
             <div className="go-back d-none d-md-block">
               <div
                 type="button"
@@ -127,8 +136,13 @@ const Checkout = () => {
             </div>
             <div className="btns-right d-flex">
               <button
-                className="btn mr-3"
-                style={{ fontWeight: "600", fontSize: "12px" }}
+                className="btn mr-5"
+                style={{
+                  fontWeight: "600",
+                  fontSize: "12px",
+                  border: "1px solid #D6D6D6",
+                  borderRadius: "8px",
+                }}
               >
                 CONTINUE SHOPPING
               </button>
@@ -137,6 +151,26 @@ const Checkout = () => {
                   PROCEED TO PAY
                 </button>
               </div>
+            </div>
+          </div>
+          <div className="col-12 d-block d-md-none justify-content-around align-items-center mt-2">
+            <div className="mt-1">
+              <button
+                className="btn btn-block p-2 px-3 rounded"
+                style={{
+                  fontWeight: "600",
+                  fontSize: "12px",
+                  border: "1px solid #D6D6D6",
+                  borderRadius: "8px",
+                }}
+              >
+                CONTINUE SHOPPING
+              </button>
+            </div>
+            <div className="checkout-btn mt-3">
+              <button className="btn btn-pay btn-block p-2 px-3 rounded">
+                PROCEED TO PAY
+              </button>
             </div>
           </div>
         </div>

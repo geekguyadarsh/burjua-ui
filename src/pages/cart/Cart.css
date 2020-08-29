@@ -14,14 +14,12 @@
 #Cart .cart-item-name,
 #Cart .cart-item-price {
   font-size: 16px;
-  font-family: Poppins;
   color: #000000;
   font-weight: 600;
 }
 
 #Cart .cart-item-category {
   font-size: 12px;
-  font-family: Poppins;
   font-weight: 500;
   text-align: left;
   color: #929292;
@@ -32,14 +30,13 @@
 #Cart .cart-item-color,
 #Cart .cart-item-size {
   font-size: 16px;
-  font-family: Poppins;
   color: #000000;
   font-weight: 500;
 }
 
 #Cart .cart-item-color {
   font-size: 16px;
-  font-family: Poppins;
+
   color: #000000;
   font-weight: 600;
 }
