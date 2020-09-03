@@ -8,7 +8,7 @@ const ProductCard = ({
   discount,
 }) => {
   return (
-    <a id="product-card" href="#!" className="btn text-left" style={{}}>
+    <a id="product-card" href="/product" className="btn text-left" style={{}}>
       <div className="card mt-1" style={{ border: "none" }}>
         <img src={imageUrl} className="card-img-top" alt="product" />
         {discount ? (

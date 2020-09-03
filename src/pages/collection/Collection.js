@@ -27,7 +27,6 @@ const Collection = () => {
       if (data.error) {
         return setError(data.error);
       } else {
-        console.log(data);
         return setProducts(data);
       }
     });
@@ -37,7 +36,6 @@ const Collection = () => {
       if (data.error) {
         return setError(data.error);
       } else {
-        console.log(data);
         // return setFilterData(data);
       }
     });

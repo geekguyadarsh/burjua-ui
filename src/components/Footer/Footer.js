@@ -80,7 +80,7 @@ const Footer = () => {
                   <h5 className="footer-head">Shopping online</h5>
                   <ul className="list-unstyled quick-links">
                     <li>
-                      <a href="#!">Order Status</a>
+                      <a href="/orders">Order Status</a>
                     </li>
                     <li>
                       <a href="#!">Shipping and Delivery</a>
@@ -124,7 +124,7 @@ const Footer = () => {
         </div>
         <div className="row">
           <div
-            className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center"
+            className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center mb-2"
             style={{ color: "#AEAEAE" }}
           >
             <p className="h6">BURJUA - © 2020. ALL RIGHTS RESERVED</p>

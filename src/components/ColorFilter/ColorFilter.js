@@ -12,6 +12,38 @@ const ColorFilter = ({ filterType }) => {
     "white",
   ]);
 
+  const isActive = (active) => {
+    if (active) {
+      return "2px solid #384355";
+    } else {
+      return "none";
+    }
+  };
+
+  const ColorIcon = ({ color }) => {
+    const [active, setActive] = useState(false);
+
+    const handleColorChange = (event) => {
+      event.preventDefault();
+      setActive(!active);
+    };
+
+    return (
+      <span
+        type="btn"
+        onClick={handleColorChange}
+        className="py-1 px-2 m-1 btn"
+        style={{
+          backgroundColor: `${color}`,
+          height: "24px",
+          width: "24px",
+          borderRadius: "50%",
+          border: isActive(active),
+        }}
+      ></span>
+    );
+  };
+
   return (
     <div
       id="FilterCollection"
@@ -43,16 +75,9 @@ const ColorFilter = ({ filterType }) => {
         <div className="d-flex flex-wrap justify-content-center">
           {colors.map((color, i) => {
             return (
-              <span
-                key={i}
-                className="py-1 px-2 m-1 btn"
-                style={{
-                  backgroundColor: `${color}`,
-                  height: "24px",
-                  width: "24px",
-                  borderRadius: "50%",
-                }}
-              ></span>
+              <div key={i}>
+                <ColorIcon color={color} />
+              </div>
             );
           })}
         </div>
