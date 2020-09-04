@@ -72,11 +72,8 @@ const Footer = () => {
           </div>
           <div className="col-md-6 mt-3">
             <div className="container">
-              <div
-                className="row text-center text-xs-center text-sm-left text-md-left"
-                style={{ fontFamily: "Poppins" }}
-              >
-                <div className="col-xs-12 col-sm-4 col-md-4">
+              <div className="row text-left text-xs-center text-sm-left text-md-left ">
+                <div className="col-xs-12 col-sm-4 col-6 col-md-4">
                   <h5 className="footer-head">Shopping online</h5>
                   <ul className="list-unstyled quick-links">
                     <li>
@@ -96,7 +93,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="col-xs-12 col-sm-4 col-md-4">
+                <div className="col-xs-12 col-sm-4 col-6 col-md-4">
                   <h5 className="footer-head">Information</h5>
                   <ul className="list-unstyled quick-links">
                     <li>
@@ -106,8 +103,17 @@ const Footer = () => {
                       <a href="#!">Find our store</a>
                     </li>
                   </ul>
+                  <h5 className="footer-head d-md-none d-block">Contact</h5>
+                  <ul className="list-unstyled quick-links d-md-none d-block">
+                    <li>
+                      <a>store@burjua.in</a>
+                    </li>
+                    <li>
+                      <a>Ph no. +91 9523532523</a>
+                    </li>
+                  </ul>
                 </div>
-                <div className="col-xs-12 col-sm-4 col-md-4">
+                <div className="col-xs-12 col-sm-4 col-6 col-md-4 d-none d-md-block">
                   <h5 className="footer-head">Contact</h5>
                   <ul className="list-unstyled quick-links">
                     <li>
@@ -122,9 +128,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <hr />
         <div className="row">
           <div
-            className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center mb-2"
+            className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center mb-3"
             style={{ color: "#AEAEAE" }}
           >
             <p className="h6">BURJUA - © 2020. ALL RIGHTS RESERVED</p>

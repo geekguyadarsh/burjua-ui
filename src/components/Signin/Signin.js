@@ -49,7 +49,7 @@ const Signin = () => {
                   placeholder="Mobile Number"
                   style={{ borderRadius: "10px" }}
                 />
-                <div class="form-check ml-3">
+                <div className="form-check ml-3">
                   <input
                     type="checkbox"
                     className="form-check-input mt-3 "

@@ -32,7 +32,7 @@ const ColorFilter = ({ filterType }) => {
       <span
         type="btn"
         onClick={handleColorChange}
-        className="py-1 px-2 m-1 btn"
+        className="py-1 px-2 m-1 btn ml-1"
         style={{
           backgroundColor: `${color}`,
           height: "24px",
@@ -71,7 +71,7 @@ const ColorFilter = ({ filterType }) => {
         </div>
         <img src={DropIcon} alt="" />
       </div>
-      <div id={`filter${2}`} className="expand m-2">
+      <div id={`filter${2}`} className="collapse show m-2">
         <div className="d-flex flex-wrap justify-content-center">
           {colors.map((color, i) => {
             return (

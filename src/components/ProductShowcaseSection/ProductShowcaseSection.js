@@ -8,7 +8,7 @@ import product3 from "../../assets/Product3.png";
 
 const ProductShowcaseSection = ({ showcaseTitle }) => {
   return (
-    <div className="container my-4">
+    <div className="container my-5">
       <div className="row d-flex justify-content-center justify-content-md-between my-2 mx-1 align-items-baseline">
         <div className="col-12 col-md-4 pretty-text-left">
           <PrettyHeader title={showcaseTitle} />
@@ -17,6 +17,7 @@ const ProductShowcaseSection = ({ showcaseTitle }) => {
           <button
             type="button"
             className="btn btn-sm btn-outline-secondary d-md-block d-none show-btn"
+            href="/collection"
           >
             SHOW MORE
           </button>

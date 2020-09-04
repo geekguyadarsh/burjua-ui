@@ -27,7 +27,7 @@ const Slider = () => {
               position: "absolute",
               right: "15%",
               bottom: "20px",
-              left: "5%",
+              left: "10%",
               zIndex: "10",
               paddingTop: "20px",
               paddingBottom: "20px",

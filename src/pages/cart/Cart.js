@@ -55,7 +55,7 @@ const Cart = () => {
                         placeholder="Promo Code"
                         size="15"
                       />
-                      <div class="input-group-append">
+                      <div className="input-group-append">
                         <div
                           className="apply-btn"
                           type="button"
@@ -113,10 +113,10 @@ const Cart = () => {
                   <div className="">
                     <div className="ask-email">
                       <input
-                        className="input-box"
+                        className="input-box pr-3 px-2"
                         style={{ border: "1px solid #d8d8d8" }}
                         type="email"
-                        size="30"
+                        size="25"
                         placeholder="Enter your email to checkout"
                       />
                     </div>

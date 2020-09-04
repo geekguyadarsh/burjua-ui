@@ -17,10 +17,12 @@ const Orders = () => {
               color: "#929292",
             }}
           >
-            <div className="col-1">Product</div>
-            <div className="col-2">Product Name</div>
+            <div className="col-4 row m-0 px-1 d-flex justify-content-around">
+              <div className="col-3 d-flex justify-content-center">Product</div>
+              <div className="col-9 col-md-8">Product Name</div>
+            </div>
             <div className="col-2">Order date</div>
-            <div className="col-2">Total Amount</div>
+            <div className="col-1">Total Amt.</div>
             <div className="col-2">Tracking ID</div>
             <div className="col-1">Receipt</div>
             <div className="col-1"></div>

@@ -6,6 +6,7 @@ import Cart from "./pages/cart/Cart";
 import Checkout from "./pages/checkout/Checkout";
 import Orders from "./pages/orders/Orders";
 import ProductInfo from "./pages/productInfo/ProductInfo";
+
 function App() {
   return (
     <BrowserRouter>

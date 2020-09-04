@@ -3,11 +3,6 @@ import Base from "../../components/Base/Base";
 import OfferCard from "../../components/OfferCard/OfferCard";
 import Slider from "../../components/Slider/Slider";
 import PrettyHeader from "../../components/PrettyHeader/PrettyHeader";
-import ProductCard from "../../components/ProductCard/ProductCard";
-import product from "../../assets/Product.png";
-import product1 from "../../assets/Product1.png";
-import product2 from "../../assets/Product2.png";
-import product3 from "../../assets/Product3.png";
 import ProductShowcaseSection from "../../components/ProductShowcaseSection/ProductShowcaseSection";
 
 const Home = () => {
@@ -20,7 +15,7 @@ const Home = () => {
 
         {/* Offer Card Section */}
 
-        <div className="container my-4">
+        <div className="container my-5">
           <OfferCard />
         </div>
 
@@ -28,11 +23,11 @@ const Home = () => {
 
         <ProductShowcaseSection showcaseTitle="Suggested For You" />
 
-        {/* How are we different Section */}
+        {/* How are we different Heading */}
 
-        <div className="container my-4">
+        <div className="container my-5">
           <div className="row my-3 d-flex justify-content-center">
-            <div className="col-10 col-md-5">
+            <div className="col-10 col-md-5 my-4">
               <PrettyHeader
                 title="How are we different"
                 subtext="Our mission is to offer high-quality Made in India products without having you spend a fortune. How do we do it? We only sell directly to you, no middlemen involved."

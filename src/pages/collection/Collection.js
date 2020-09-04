@@ -24,6 +24,7 @@ const Collection = () => {
 
   const loadAllProducts = () => {
     getAllProducts().then((data) => {
+      console.log(data);
       if (data.error) {
         return setError(data.error);
       } else {
@@ -31,6 +32,7 @@ const Collection = () => {
       }
     });
   };
+
   const loadAllFilters = () => {
     getProductFilters().then((data) => {
       if (data.error) {
@@ -41,10 +43,10 @@ const Collection = () => {
     });
   };
 
-  useEffect(() => {
-    loadAllFilters();
-    loadAllProducts();
-  }, []);
+  // useEffect(() => {
+  //   loadAllFilters();
+  //   loadAllProducts();
+  // }, []);
 
   const FilterSortCollapsed = () => {
     return (

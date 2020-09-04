@@ -11,7 +11,7 @@ const ButtonFilter = ({ filterType }) => {
       style={{ border: "1px solid #EEEEEE", borderRadius: "4px" }}
     >
       <div
-        className="d-flex justify-content-between btn"
+        className="d-flex justify-content-between btn ml-1"
         type="button"
         data-toggle="collapse"
         data-target={`#filter${2}`}
@@ -31,7 +31,7 @@ const ButtonFilter = ({ filterType }) => {
         </div>
         <img src={DropIcon} alt="" />
       </div>
-      <div id={`filter${2}`} className="expand m-2">
+      <div id={`filter${2}`} className="collapse show m-2">
         <div className="d-flex flex-wrap justify-content-center">
           {discounts.map((discount, i) => {
             return (

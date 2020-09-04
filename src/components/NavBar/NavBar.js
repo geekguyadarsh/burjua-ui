@@ -156,8 +156,11 @@ const NavBar = ({ homepage = false, history }) => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              style={currentTab(history, "/about")}
+            <div
+              style={{
+                cursor: "pointer",
+                opacity: "0.6",
+              }}
               className={
                 homepage ? "nav-link text-white" : "nav-link text-black"
               }
@@ -165,7 +168,7 @@ const NavBar = ({ homepage = false, history }) => {
               data-target="#signinModal"
             >
               Signin
-            </Link>
+            </div>
           </li>
           <li className="nav-item d-md-block d-none">
             <Link className="nav-link text-white" to="/cart">

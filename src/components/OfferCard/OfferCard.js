@@ -32,13 +32,14 @@ const OfferCard = ({ imageUrl, title, ctaText }) => {
                 color: "white",
                 zIndex: "30",
                 opacity: "1",
+                width: "150px",
               }}
             >
               New arrivals are now in!
             </p>
             <button
               type="button"
-              className="card-title my-1 card-title btn btn-sm btn-outline-secondary p-2 mt-2"
+              className="card-title my-1 card-title btn btn-sm btn-outline-secondary p-2 px-4 mt-2"
               style={{
                 textAlign: "left",
                 fontFamily: "Poppins",
@@ -83,7 +84,7 @@ const OfferCard = ({ imageUrl, title, ctaText }) => {
             </p>
             <button
               type="button"
-              className="card-title my-1 card-title btn btn-sm btn-outline-secondary p-2 mt-2"
+              className="card-title my-1 card-title btn btn-sm btn-outline-secondary p-2 mt-2 px-4"
               style={{
                 textAlign: "left",
                 fontFamily: "Poppins",
@@ -130,7 +131,7 @@ const OfferCard = ({ imageUrl, title, ctaText }) => {
             </p>
             <button
               type="button"
-              className="card-title my-1 card-title btn btn-sm btn-outline-secondary p-2 mt-2 px-2"
+              className="card-title my-1 card-title btn btn-sm btn-outline-secondary p-2 mt-2 px-4"
               style={{
                 textAlign: "left",
                 fontFamily: "Poppins",

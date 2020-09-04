@@ -22,7 +22,7 @@ const PriceSlider = () => {
       style={{ border: "1px solid #EEEEEE", borderRadius: "4px" }}
     >
       <div
-        className="d-flex justify-content-between btn"
+        className="d-flex justify-content-between btn ml-1"
         type="button"
         data-toggle="collapse"
         data-target={`#filter${1}`}
@@ -42,7 +42,7 @@ const PriceSlider = () => {
         </div>
         <img src={DropIcon} alt="" />
       </div>
-      <div id={`filter${1}`} className="expand m-2">
+      <div id={`filter${1}`} className="collapse show m-2">
         <div className="d-flex justify-content-between">
           <span
             className="py-1 px-3 rounded"

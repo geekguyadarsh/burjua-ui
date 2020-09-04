@@ -16,7 +16,7 @@ const ProductInOrders = () => {
           />
         </div>
         <div className="col-9 col-md-8">
-          <div className="orders-item-name" style={{ fontWeight: "600" }}>
+          <div className="orders-item-name my-2" style={{ fontWeight: "600" }}>
             Bally Black Lione Lantel
           </div>
           <div

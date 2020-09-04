@@ -12,6 +12,7 @@
 
 .navbar ul li {
   margin-right: 1.6em;
+  font-size: 14px;
 }
 
 .navbar ul li .faded-text {
@@ -34,7 +35,8 @@
     color: black;
     z-index: 10;
   }
-  .navbar-collapse ul li a {
+  .navbar-collapse ul li a,
+  .navbar-collapse ul li div {
     background-color: #fff;
     color: black !important;
   }

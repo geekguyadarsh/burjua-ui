@@ -1,14 +1,14 @@
 import React from "react";
-import product from "../../assets/Product.png";
 import ProductInOrders from "../ProductInOrders/ProductInOrders";
+import externalLinkIcon from "../../assets/external-link-icon.svg";
 
 const OrderDetailsCard = () => {
   return (
     <div>
       {/* FOR DESKTOP */}
 
-      <div className="d-none row d-md-flex mt-2 order-item align-items-center flex-nowrap">
-        <div className="col-3 px-0">
+      <div className="d-none row d-md-flex mt-3 order-item align-items-center flex-nowrap">
+        <div className="col-4 px-0">
           <ProductInOrders />
           <ProductInOrders />
         </div>
@@ -26,17 +26,19 @@ const OrderDetailsCard = () => {
             Delivered
           </span>
         </div>
-        <div className="col-2 order-item-cost">₹ 4600</div>
+        <div className="col-1 order-item-cost">₹ 4600</div>
         <div
-          className="col-2 cart-item-price"
+          className="col-2 order-item-id"
           style={{
             letterSpacing: "0.14px",
             color: "#384355",
             fontSize: "12px",
             textTransform: "uppercase",
+            cursor: "pointer",
           }}
         >
           55213ths1314
+          <img src={externalLinkIcon} className="ml-1 mb-1" alt="" />
         </div>
         <div
           className="col-1 order-receipt-download btn"
@@ -101,7 +103,10 @@ const OrderDetailsCard = () => {
           </div>
           <div className="order-item-tracking-id d-flex justify-content-between">
             <div className="font-weight-light">Tracking ID</div>
-            <div>55213ths1314</div>
+            <div>
+              55213ths1314
+              <img src={externalLinkIcon} className="ml-1 mb-1" alt="" />
+            </div>
           </div>
           <div className="order-item-receipt d-flex justify-content-between py-2">
             <div className="font-weight-light">Receipt</div>
@@ -121,6 +126,8 @@ const OrderDetailsCard = () => {
           </button>
         </div>
       </div>
+
+      <hr className="d-md-block d-none" style={{ marginLeft: "-10px" }} />
     </div>
   );
 };
