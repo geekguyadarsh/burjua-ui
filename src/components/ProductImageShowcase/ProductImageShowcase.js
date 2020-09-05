@@ -3,6 +3,7 @@ import "./ProductImageShowcase.css";
 import product1 from "../../assets/Product1.png";
 import product2 from "../../assets/Product2.png";
 import product3 from "../../assets/Product3.png";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 const ProductImageShowcase = () => {
   const ProductSlider = () => (
@@ -45,26 +46,49 @@ const ProductImageShowcase = () => {
               style={{ width: "100%" }}
             />
           </div>
+          <div className="carousel-item">
+            <img
+              className="rounded"
+              src={product2}
+              alt="New york"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              className="rounded"
+              src={product2}
+              alt="New york"
+              style={{ width: "100%" }}
+            />
+          </div>
         </div>
-
-        <ul className="d-md-flex d-none carousel-indicators indicators-large justify-content-start">
-          <li
-            data-target="#carouselExampleSlidesOnly"
-            data-slide-to="0"
-            className="active"
-          >
-            <img className="rounded" src={product1} alt="" />
-          </li>
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="1">
-            <img className="rounded" src={product2} alt="" />
-          </li>
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="2">
-            <img className="rounded" src={product3} alt="" />
-          </li>
-          <li data-target="#carouselExampleSlidesOnly" data-slide-to="3">
-            <img className="rounded" src={product2} alt="" />
-          </li>
-        </ul>
+        <ScrollContainer>
+          <ul className="d-md-flex d-none carousel-indicators indicators-large justify-content-start">
+            <li
+              data-target="#carouselExampleSlidesOnly"
+              data-slide-to="0"
+              className="active"
+            >
+              <img className="rounded" src={product1} alt="" />
+            </li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="1">
+              <img className="rounded" src={product2} alt="" />
+            </li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="2">
+              <img className="rounded" src={product3} alt="" />
+            </li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="3">
+              <img className="rounded" src={product2} alt="" />
+            </li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="4">
+              <img className="rounded" src={product2} alt="" />
+            </li>
+            <li data-target="#carouselExampleSlidesOnly" data-slide-to="5">
+              <img className="rounded" src={product2} alt="" />
+            </li>
+          </ul>
+        </ScrollContainer>
       </div>
       <div
         id="carouselExampleSlidesOnly"
@@ -80,6 +104,8 @@ const ProductImageShowcase = () => {
           <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
           <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
           <li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
+          <li data-target="#carouselExampleSlidesOnly" data-slide-to="4"></li>
+          <li data-target="#carouselExampleSlidesOnly" data-slide-to="5"></li>
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">

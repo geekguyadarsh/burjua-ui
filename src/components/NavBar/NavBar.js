@@ -46,6 +46,7 @@ const NavBar = ({ homepage = false, history }) => {
         ></img>
         BURJUA
       </Link>
+
       <img
         src={homepage ? searchIcon : searchIconBlack}
         alt="search"

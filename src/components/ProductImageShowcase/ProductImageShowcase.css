@@ -1,7 +1,6 @@
 #ProductInfo .indicators-large {
   position: relative;
   margin: 0px;
-  overflow-x: hidden;
 }
 
 #ProductInfo .indicators-large li {
@@ -17,8 +16,6 @@
   min-width: 100%;
   height: auto;
   padding: 2px;
-}
-#ProductInfo .indicators-large .active img {
 }
 
 #ProductInfo .indicators-large .active {
